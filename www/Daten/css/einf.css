@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+body	    {background-color:#F0F0F0; font-family:Lucida Grande, Arial, Junicode, Times New Roman, serif; text-align:justify; margin-left:2cm; margin-right:2cm; font-size:12pt; line-height:18pt;}
+
+h1      {font-family:Lucida Grande, Arial,Junicode, sans-serif; font-size:15pt; font-weight:bold; margin-top:40px; margin-bottom:30px;}
+h2      {font-family:Lucida Grande, Arial,Junicode, sans-serif; font-size:12pt; font-weight:bold; margin-top:25px; margin-bottom:5px;}
+h3	    {font-family:Lucida Grande, Arial,Junicode, sans-serif; font-size:13pt;}
+h4	    {font-family:Lucida Grande, Arial,Junicode, sans-serif; font-size:12pt;}
+h5	    {font-family:Lucida Grande, Arial,Junicode, sans-serif; font-size:12pt;}
+h6	    {font-family:Lucida Grande, Arial, Junicode, Helvetica, sans-serif; font-size:12pt; font-weight:bold; color:white; margin-top:0px; margin-bottom:0px}
+
+p	    {margin-top:5px; margin-bottom:15px; line-height: 2;}
+
+sup	    {font-size:10pt}
+
+a:link 		{ text-decoration:none;}
+a:visited	{ text-decoration:none;}
+a:hover		{ color:#8B1B31; text-decoration:underline;}
+a:active	{ text-decoration:none;}
+a:focus		{ text-decoration:none;}
+
+.ib         {color:blue; font-size:13pt; font-weight:bold}
+.klein	    {font-size:12pt;}
+.inhkl	    {font-size:12pt; margin-left:0.5cm;}
+.bibkl      {font-size:11pt; margin-top:}
+.bibklt     {font-size:11pt; margin-left:0cm; margin-top:12px;}
+.zitat			{margin-left:30px; font-style: italic}
+.zitatKlammer {font-size:11pt;}
+.ux          {font-family:Lucida Grande, Junicode}   
+.sources	{margin-left:1cm;
+			text-indent:-1cm;}
+
+.zr	    {background-color:gray}
+.zd	    {text-decoration:line-through;}
+.zk	    {background-color:#78C878;}
+.zn	    {background-color:#80FFF0} 
+
+.nav	    {font-family:Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; font-weight : bold; margin-top:0px; margin-bottom:0px;}
+
+
+.inhverz		{color:#8B1B31; line-height: 12px}
+.inhAbsatz	{color:#8B1B31; padding-top: 15px}
+.ziffern		{color:#8B1B31}
+.back		{color:#8B1B31}
+
+
+/* CSS Document */
+ul {
+ 	list-style-type:none;
+	padding:3px 0 30px 0;
+	border-top:2px solid #8B1B31;
+	margin:10px 0;
+	width: 100%;
+}
+ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	float:left;
+	margin:0 2px;
+	width: 19%;
+	text-align: center;
+}
+ul li a {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	display:block;
+	padding:8px 10px;
+	background-color:#E0E0E0;
+	/*color:#9E2922;*/
+	color:#000000;
+	text-decoration:none;
+}
+/* place the "current" pseudo class here */
+ul li a.current {
+	background-color:#8B1B31;
+	color:#FFFFFF;
+}
+ul li a:hover {
+	background-color:#C19651;
+	color:#000000;
+}
+
+.registerLink {
+	 color:#8B1B31; text-decoration:none;
+}
+
+

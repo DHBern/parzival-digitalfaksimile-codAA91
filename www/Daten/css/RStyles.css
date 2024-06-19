@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* allgemeine Formatierungen */
+body	    { background-color:#F0F0F0; margin-left:20px; }
+p	    		{ margin-top:5px; margin-bottom:15px; }
+h1 				{ font-family:Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin-top:50px; }
+h2				{ font-family:Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; padding-top:5px; padding-left:15px }
+a:link 		{ color:#000000; font-weight:bold; text-decoration:none; }
+a:visited	{ color:#000000; font-weight:bold; text-decoration:none; }
+a:hover		{ color:#8B1B31; font-weight:bold; text-decoration:none; }
+a:active	{ color:#000000; font-weight:bold; text-decoration:none; }
+a:focus		{ color:#000000; font-weight:bold; text-decoration:none; }
+
+/* Positionierung Navigation */
+#start 				{ position:absolute; top:24px; left:20px; z-index:1; }
+#dropdown 		{ position:absolute; top:24px; left:10px; z-index:1; }
+#blaettern1 	{ position:absolute; top:27px; left:155px; width:32px; height:20px; z-index:1; }
+#blaettern2 	{ position:absolute; top:27px; left:185px; width:32px; height:20px; z-index:1; }
+#blaettern3 	{ position:absolute; top:27px; left:223px; width:32px; height:20px; z-index:1; }
+#blaettern4 	{ position:absolute; top:27px; left:250px; width:32px; height:20px; z-index:1; }
+#lbl_vers 		{ position:absolute; top:26px; left:302px; z-index:1; }
+#vers 			{ position:absolute; top:24px; left:334px; z-index:1; font-family:Arial, Helvetica, sans-serif; font-size:10px }
+#submitVers 	{ position:absolute; top:25px; left:389px;	z-index:2; }
+#lbl_blatt 		{ position:absolute; top:26px; left:427px; z-index:1; }
+#blatt 			{ position:absolute; top:24px; left:459px; z-index:1; }
+#submitBlatt 	{ position:absolute; top:25px; left:514px;	z-index:1; }
+#lagensymbol 	{ position:absolute; top:5px; left:560px; z-index:1; }
+#startseite 	{ position:absolute; top:25px; left:727px; z-index:1; }
+#einfuehrung 	{ position:absolute; top:25px; left:797px; z-index:1; }
+#material 		{ position:absolute; top:25px; left:875px; z-index:1; }
+#miniaturen 	{ position:absolute; top:25px; left:955px; z-index:1; }
+
+
+/* 2. Zeile Navigation */
+#blattAnzeige 				{ position:absolute; top:55px; left:427px; width:auto; height:20px; z-index:1; }
+#versAnzeige 					{ position:absolute; top:55px; left:10px; width:auto; height:20px; z-index:1; }
+#lagenAnzeige 				{ position:absolute; top:55px; left:560px; width:auto; height:20px; z-index:1; }
+#g50 									{ position:absolute; top:55px; left:727px; width:auto; height:20px; z-index:1; }
+#g100 								{ position:absolute; top:55px; left:780px; width:auto; height:20px; z-index:1; }
+#g150 								{ position:absolute; top:55px; left:833px; width:auto; height:20px; z-index:1; }
+#zoom 								{ position:absolute; top:55px; left:901px; z-index:1; }
+#info 								{ position:absolute; top:55px; left:931px; z-index:1; }
+#miniaturansicht 			{ position:absolute; top:55px; left:973px; visibility:hidden; z-index:5; }
+#miniaturansichtHell 	{ position:absolute; top:55px; left:973px; z-index:1; }
+#bildbeschreibung 		{ position:absolute; top:55px; left:1003px; visibility:hidden; z-index:5; }
+#bildbeschreibungHell { position:absolute; top:55px; left:1003px; z-index:1; }
+#navigation { height: 78px; }
+#myContainer { margin-left: -10px; }
+.cont { width: 1014px; height: 680px; }
+#container { margin-left: -10px; }
+
+
+
+/* Formatierung Navigationstext */
+.navText	    { font-family:Arial, Helvetica, sans-serif; font-size:10pt; text-decoration: none; margin-top:0px; margin-bottom:0px; }
+.navTextLink	{ font-family:Arial, Helvetica, sans-serif; font-size:10pt; text-decoration: none; margin-top:0px; margin-bottom:0px; }
+.red					{color:#8B1B31}
+
+.dynamisch		{ font-family:Arial, Helvetica, sans-serif; font-size:10pt; }
+/*.titel				{ font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight: bold; color:#9E2922; }*/
+.titel				{ font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight: bold; color:#8B1B31; }
+.fliesstext		{ font-family:Arial, Helvetica, sans-serif; font-size:10pt; margin-bottom:10px; margin-right:20px;  padding-left:15px}
+
+
+/*Januar 2023: inline css eliminieren */
+.inputfeld {width:32pt;}
+.Stil1 {color: #9E2922}
+.bodycolor {background-color:="F0F0F0"}

@@ -1,0 +1,89 @@
+body 		{background-color:#F0F0F0; font-family:Arial, Helvetica, sans-serif; margin-left:8px; margin-right:0px; margin-top:0px; margin-bottom:0px }
+
+#start {font-family:Arial, Helvetica, sans-serif; color:#8B1B31; font-size:12pt; font-weight:bold; position:absolute; top:19px; left:23px; padding-bottom: 5px; border-bottom:2px solid #8B1B31; z-index:1; }
+#close {position:absolute; top:18px; right:15px; z-index:1; }
+#content {position:absolute; top:80px; }
+p,td	{margin-left:15px; margin-top:10px; margin-bottom:10px; margin-right:25px; font-size:10pt; line-height:20px; padding-right: 25px;}
+
+li		{margin-left:0px; margin-top:10px; margin-bottom:10px; margin-right:15px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; line-height:20px;}
+
+h1 		{font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:bold; color:white; margin-top:0px; margin-bottom:0px}
+h2 		{font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:bold; color:white; margin-top:0px; margin-bottom:0px}
+h3		{font-family:Arial, Helvetica, sans-serif; font-size:11pt; font-weight:bold; color:gray; margin-top:25px; margin-bottom:0px; margin-left:15px; margin-right:15px;}
+
+
+a		{font-family:Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; font-weight : bold;}
+a:link		{color:blue}
+a:visited	{color:blue}
+a:hover		{text-decoration:underline; color:#8B1B31;}
+a:active	{color:gray}
+
+.spFonts		{background-color:#F0F0F0; font-family:Lucida Grande, Arial, Junicode, Times New Roman, serif; margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px; line-height:18pt; text-align:justify;}
+.dynamisch	{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold}
+.fix		{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold;}
+  
+.Bereich, .Feld	{ background-color:#CCCCCC;  border:2px solid #DDDDDD; }
+.Auswahl	{ background-color:gray;  border:1px solid white }
+.Button		{ background-color:#AAAAAA; color:black;  border:1px solid white; font-weight:bold }
+
+.i		{font-style:italic;}
+.init			{ color:red; font-size:16pt }
+.xinit			{ color:red; font-size:10pt }
+.minit			{ color:red; font-size:30pt }
+.zinit			{ color:red; font-size:16pt }
+.hvh			{ color:#FF6600; }
+.chvh			{ color:#FF6600; font-size:18pt}
+.xhvh			{ color:#FF6600; font-size:10pt}
+.k				{ background-color:#78C878; }
+.ls  			{ color:#33FFFF; }
+.sr	        	{ color:green; }
+.del			{ text-decoration:line-through; }
+.ras			{ background-color:gray }
+.nota			{ color:#33FFFF; }
+.rekl			{ color:brown; }
+
+.versnr			{ font-weight:bold; margin-right:5px;}
+
+.cad			{ color:#FF6600; font-size:18pt}
+.del			{ text-decoration:line-through; }
+.seitenangabe		{color:blue; font-weight:bold;}
+
+.sr1, .sr2, .sr3 	{ color:green; }
+
+
+.ls1, .ls2, .ls3, .ls4  { color:#33FFFF; }
+.si1        {color:red; font-size:17pt; background-color:gold}
+.si2        {color:red; font-size:14pt; font-weight:bold}
+
+.v          {font-weight:bold;}
+.m          {font-style:italic}
+
+.r          {background-color:gray}
+.n          {background-color:#80FFF0} 
+
+
+.d          {text-decoration:line-through;}
+.g          {color:#FF00FF;}
+
+.schreiber  {font-variant:small-caps}
+
+.ues	    {color:red; font-weight:bold}
+.var        {color:#804000; font-weight:bold}
+
+.anm	    {color:gray;}
+.anmkl	    {color:#555555;font-size:10pt;}
+
+.zr	    {background-color:gray}
+.zd	    {text-decoration:line-through;}
+.zk	    {background-color:#78C878;}
+.zn	    {background-color:#80FFF0} 
+
+.blau       {color:blue;}
+.red				{color:#8B1B31;}
+
+.dynamisch	{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold}
+.fix		{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold;}
+  
+.Bereich, .Feld	{ background-color:#CCCCCC;  border:2px solid #DDDDDD; }
+.Auswahl	{ background-color:gray;  border:1px solid white }
+.Button		{ background-color:#AAAAAA; color:black;  border:1px solid white; font-weight:bold }

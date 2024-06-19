@@ -1,0 +1,2 @@
+RBilder/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+Daten/R*/**/*.jpg filter=lfs diff=lfs merge=lfs -text

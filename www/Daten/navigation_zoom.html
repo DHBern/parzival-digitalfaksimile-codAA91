@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Berner Parzival-Handschrift (Cod. AA 91)</title>
+<script src="RScripts/RScripts.js" type="text/javascript"></script>
+<script src="RScripts/blattInfoDS.js" type="text/javascript"></script>
+<script src="RScripts/vers.js" type="text/javascript"></script>
+<script language="javascript">var transkription = false;</script>
+<link rel="stylesheet" type="text/css" href="css/RStyles.css">
+
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body class="bodycolor" onload="javascript:init();">
+<script src="RScripts/wz_tooltip.js" type="text/javascript"></script>
+<a href="index_konv.html" target="_parent">
+<div id="start" class="titel">Cod. AA 91</div></a>
+<form name="naviHSR">
+	<div id="dropdown" onmouseover="Tip('Buch wählen')" onmouseout="UnTip()" >
+		<select name="selectBook" id="buchMenu" onChange="MM_jumpMenuParts()" class="Auswahl">
+			<option value="javascript:">Buch w&auml;hlen</option>
+      <option value="rvs002">Buchdeckel vorne</option>
+	 		<option value="r1">Buch I</option>
+    	<option value="r9">Buch II</option>
+    	<option value="v19">Buch III</option>
+    	<option value="r34">Buch IV</option>
+   		<option value="r43">Buch V</option>
+    	<option value="v55">Buch VI</option>
+    	<option value="r68">Buch VII</option>
+    	<option value="v80">Buch VIII</option>
+    	<option value="r88">Buch IX</option>
+    	<option value="v102">Buch X</option>
+    	<option value="v113">Buch XI</option>
+    	<option value="r121">Buch XII</option>
+    	<option value="v131">Buch XIII</option>
+    	<option value="v142">Buch XIV</option>
+    	<option value="v154">Buch XV</option>
+    	<option value="r166">Buch XVI</option>
+	 		<option value="v182">Buchdeckel hinten</option>
+		</select>
+	</div>
+  
+  <div class="navText" id="lbl_vers">Vers</div>
+  <div id="vers" onmouseover="Tip('Vers finden')" onmouseout="UnTip()">
+  	<input type="text" name="Vers" onKeyPress="return submitenter(this,event)" maxlength="6" class="Feld inputfeld">
+  </div>
+  <div id="submitVers"><img border="0" src="../images/submitSuchen.gif" alt="Vers finden" onmouseover="Tip('Vers finden')" onmouseout="UnTip()" onclick="javascript:checkVersEingabe()"/></div>
+<div class="navText" id="lbl_blatt">Blatt</div>
+  <div id="blatt" onmouseover="Tip('Blatt finden')" onmouseout="UnTip()" onclick="javascript:checkVersEingabe()">
+    <input type="text" name="Blatt" onkeypress="return submitenter(this,event)" maxlength="6" class="Feld inputfeld" />
+  </div>
+  <div id="submitBlatt"><img border="0" src="../images/submitSuchen.gif" alt="Blatt finden" onmouseover="Tip('Blatt finden')" onmouseout="UnTip()" onclick="javascript:checkSeitenEingabe()"/></div>
+
+
+</form>
+<div id="blaettern1"><img border="0" src="../images/backward_book.gif" onmouseover="Tip('vorheriges Buch')" onmouseout="UnTip()" onclick="javascript:goPrevBook();"></div>
+<div id="blaettern2"><img border="0" src="../images/backward_page.gif" onmouseover="Tip('zurückblättern')" onmouseout="UnTip()" onclick="javascript:goPrevPage();"></div>
+<div id="blaettern3"><img border="0" src="../images/forward_page.gif" onmouseover="Tip('weiterblättern')" onmouseout="UnTip()" onclick="javascript:goNextPage();"></div>
+<div id="blaettern4"><img border="0" src="../images/forward_book.gif" onmouseover="Tip('nächstes Buch')" onmouseout="UnTip()" onclick="javascript:goNextBook();"></div>
+<div id="einfuehrung" class="navText"><a href="einfuehrung.html" target="_blank">Einführung</a></div>
+<div id="miniaturen" class="navTextLink"><a href="index_konv.html?008r&50&min" target="_parent">Miniaturen</a></div>
+<div id="material" class="navTextLink"><a href="material.html" target="_parent">Materialien</a></div>
+
+<!-- Navigation 2. Zeile -->
+<div id="startseite" class="navText"><a href="../index.html" target="_parent">Startseite</a></div>
+<div id="blattAnzeige" class="dynamisch"></div>
+<div id="versAnzeige" class="dynamisch"></div>
+<div id="lagenAnzeige" class="dynamisch"></div>
+<div id="lagensymbol"><img name="ImgLagensymbol" src="../images/LagensymboleDoppelt/blind.gif" alt="Lagensymbol" /></div>
+<div id="g50" class="navText">Zoom-Ansicht</div>
+<div id="miniaturansicht" class="dynamisch"><img name="ImgMiniaturansicht" src="../images/miniaturansicht.gif" border="0" alt="Miniaturansicht" onmouseover="Tip('zur Miniatur-Ansicht wechseln')" onmouseout="UnTip()" onclick="javascript:ansichtMiniaturen();"/></div>
+<div id="miniaturansichtHell" class="dynamisch"><img name="ImgMiniaturansichtHell" src="../images/miniaturansicht_hell.gif" border="0"/></div>
+<div id="zoom" class="dynamisch"><img src="../images/codexansicht.gif" border="0" alt="Lupe" onmouseover="Tip('zur Prozent-Ansicht wechseln')" onmouseout="UnTip()" onclick="javascript:ansichtKonv(curSlide);"/></div>
+<div id="info"><img src="../images/info_square.gif" border="0" onmouseover="Tip('Informationen zum Text')" onmouseout="UnTip()" onclick="javascript:infoFenster('info.html')" /></div>
+<div id="bildbeschreibung" class="dynamisch"><img name="ImgBildbeschreibung" src="../images/bildbeschreibung.gif" border="0" alt="Bildbeschreibung" onmouseover="Tip('Bildbeschreibung anzeigen')" onmouseout="UnTip()" onclick="javascript:beschreibungAnzeigen(curSlide - 1 + 'v / ' + curSlide + 'r');"/></div>
+<div id="bildbeschreibungHell" class="dynamisch"><img name="ImgBildbeschreibungHell" src="../images/bildbeschreibung_hell.gif" border="0"/></div>
+<div>
+</div>
+</body>
+</html>

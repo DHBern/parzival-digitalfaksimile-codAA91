@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Berner Parzival-Handschrift (Cod. AA 91)</title>
+<script language="javascript">
+
+//Variablen initialisieren
+var curSlideX;
+var rectoVersoX;
+var zoomX;
+var aktBuch = 1;
+var ansicht;
+var einfuehrung;
+
+
+
+function checkURLparam() {
+	
+	var strHref = window.location.href;
+	// wenn Parameter für Seite angegeben werden
+	if (strHref.indexOf("?") > -1 ){
+    var strQueryString = strHref.substr(strHref.indexOf("?") + 1).toLowerCase();
+		var aQueryString = strQueryString.split("&");
+		var strQueryBlatt = aQueryString[0];
+		var strQueryGroesse = aQueryString[1];
+		var strQueryAnsicht = aQueryString[2];
+		
+		for (i = 0; i < 2; i++) {
+			if (strQueryBlatt.charAt(0)=="0") {
+				strQueryBlatt = strQueryBlatt.substring(1, strQueryBlatt.length);
+			}
+		}
+		curSlideX = strQueryBlatt.substring(0, strQueryBlatt.length - 1);
+		
+		rectoVersoX = strQueryBlatt.substring(strQueryBlatt.length - 1, strQueryBlatt.length);
+		zoomX = strQueryGroesse;
+		//alert("curSlide: " + curSlideX + " rectoVerso: " + rectoVersoX + " zoom: " + zoomX);
+		if (strQueryAnsicht == "cod") {
+			window.RImage.location.href = "image_konv.html";
+			window.frames["navigation"].location.href = "navigation_konv.html";
+			ansicht = "konv";
+		} else {
+			window.RImage.location.href = "image_miniatur.html";
+			window.navigation.location.href = "navigation_miniaturen.html";
+			ansicht = "miniatur";
+		}
+	} else { // keine Übergabe von Parametern
+		curSlideX = 1;
+		alert("curSlideX: " + curSlideX);
+		rectoVersoX = "r";
+		zoomX = 50;
+		window.frames["RImage"].location.href = "image_konv.html";
+		window.frames["navigation"].location.href = "navigation_konv.html";
+		ansicht = "konv";
+	}
+}
+
+
+
+function TasteGedrueckt(Ereignis) {
+	var zoom = navigation.zoom;
+	if (navigator.appName == "Netscape") {
+		if (parseInt(zoom) != 150) {
+			if (Ereignis.which == 37) {
+				navigation.goPrevPage();
+			}
+			if (Ereignis.which == 39) {
+				navigation.goNextPage();
+			}
+		 	return true;
+		}
+	}
+	if (navigator.appName == "Microsoft Internet Explorer") {
+		if (parseInt(zoom) != 150) {
+			if (window.event.keyCode == 37) {
+				navigation.goPrevPage();
+				return true;
+			} 
+			if (window.event.keyCode == 39) {
+				navigation.goNextPage();
+				return true;
+			}
+		}
+	}
+}
+
+document.onkeydown = TasteGedrueckt;
+
+</script>
+</head>
+
+<frameset rows="85,*" frameborder="no" border="0" framespacing="0" onload="javascript:checkURLparam();">
+  <frame src="navigation.html" name="navigation" scrolling="No" noresize="noresize" id="topFrame" title="navigation" />
+  <frame src="image_konv.html" name="RImage" id="RImage" title="RImage" />
+</frameset>
+<noframes>
+<body>
+</body>
+</noframes></html>

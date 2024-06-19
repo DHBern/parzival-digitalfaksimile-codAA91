@@ -1,0 +1,73 @@
+body			{ background-color:#F0F0F0; font-family: Lucida Grande, Junicode, serif; font-size:14pt; }
+td				{ font-family:Lucida Grande, Junicode, Times New Roman, serif; font-size:14pt; }
+h1 				{ font-family:Lucida Grande, Arial, Junicode, Times New Roman, serif; font-size:12pt; font-weight:bold; }
+h2				{ font-family:Lucida Grande, Arial, Junicode, Times New Roman, serif; font-size:12pt; }
+
+a:link		{ text-decoration:none; color:blue }
+a:visited	{ text-decoration:none; color:blue }
+a:hover		{ text-decoration:none; color:blue }
+a:active	{ text-decoration:none; color:blue }
+
+.bodymargin { margin-left:23px }
+
+.init			{ color:red; font-size:16pt; font-weight:bold }
+.zinit		{ color:red; font-size:16pt }
+.xinit		{ color:red; font-size:12pt }
+.minit		{ color:red; font-size:30pt }
+.ginit			{ color:red; font-size:20pt; font-weight:bold }
+.hvh			{ color:#FF6600; }
+.chvh			{ color:#FF6600; font-size:14pt }
+.xhvh			{ color:#FF6600; font-size:10pt }
+.d      	{ text-decoration:line-through; }
+.k				{ color:#78C878; }
+.ls  			{ color:#33FFFF; }
+.n      	{ background-color:#80FFF0 }  
+.r				{ background-color:gray }
+.si1			{ color:red; font-size:17pt; background-color:gold}
+.sr	    	{ color:green; }
+.sr1	  	{ color:green; }
+.sr2	  	{ color:green; }
+.sr3	  	{ color:green; }
+.sr4	  	{ color:green; }
+.srX	  	{ color:green; }
+.tit			{ color:brown; }
+.zzTest		{ font-family:Arial, Helvetica, sans-serif; color:#888888; font-size:12pt; font-weight:bold; margin-right: 20px; }
+
+.zd	    {text-decoration:line-through;}
+.tur          {color:#80FFF0;}
+
+.del			{ text-decoration:line-through; }
+.ras			{ background-color:gray }
+.nota			{ color:#33FFFF; }
+.rekl			{ color:black;font-size: 12pt; }
+.kust			{ color:black;font-size: 12pt; }
+.supMaj		{font-size: 11px;}
+.vers			{ font-family:Lucida Grande, Junicode, Times New Roman, serif; font-size:14pt; margin-top: 3px; margin-bottom: 3px; }
+.versnr		{ font-weight:bold; margin-right:5px }
+
+.cad			{ color:#FF6600; font-size:14pt }
+.cadH			{ color:#FF6600; font-size:18pt }
+.del			{ text-decoration:line-through; }
+.strophenangabe { font-family: Arial, Helvetica, sans-serif; font-size:11pt; color:blue; font-weight:bold; }
+
+.dynamisch		{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; }
+.fix					{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; }
+  
+.schreiber  	{ font-variant:small-caps; }
+.blau       	{ color:blue; font-size: 14pt; }
+.blaukl				{ color:blue;font-size: 11pt;}
+.swkl					{ color:black;font-size: 10pt;}
+.seitenangabe	{ color:blue; font-weight:bold;}
+.ul						{ text-decoration:underline; }
+.m          	{ font-style:italic}
+.bildtitel		{ font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:12pt; margin-bottom: 10px}
+.bildbeschreibung { font-family:Arial, Helvetica, sans-serif; font-size:10pt; line-height: 12pt; margin-top:10px; margin-bottom:20px}
+.rubrizierung	{ font-family:Lucida Grande, Junicode, Times New Roman, serif; font-size:13pt; color:brown; line-height: 13pt;}
+.rp						{ font-family:Arial, Helvetica, sans-serif; font-size:11pt; color:#000000; margin-top:5pt; margin-bottom:20pt;}
+.junicode			{ font-family:Lucida Grande, Junicode, Times New Roman, serif; font-size:13pt; line-height: 12pt; }
+#start {font-family:Lucida Grande, sans-serif; color:#8B1B31; font-size:17pt; font-weight:bold; position:absolute; top:19px; left:23px; padding-bottom: 5px; border-bottom:2px solid #8B1B31; z-index:1; }
+#close {position:absolute; top:18px; right:15px; z-index:1; }
+
+.gr {color: gray;}
+.little {font-size: 12pt;}
+.dr {color: brown;}

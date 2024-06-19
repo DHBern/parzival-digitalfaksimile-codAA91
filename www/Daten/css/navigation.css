@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+ul {
+ 	list-style-type:none;
+	padding:3px 0 30px 0;
+	border-top:2px solid #8B1B31;
+	margin:10px 0;
+	width: 100%;
+}
+ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	float:left;
+	margin:0 2px;
+	width: 19%;
+	text-align: center;
+}
+ul li a {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	display:block;
+	padding:8px 10px;
+	background-color:#E0E0E0;
+	color:#9E2922;
+	text-decoration:none;
+}
+/* place the "current" pseudo class here */
+ul li a.current {
+	background-color:#8B1B31;
+	color:#FFFFFF;
+}
+ul li a:hover {
+	background-color:#C19651;
+	color:#000000;
+}
+

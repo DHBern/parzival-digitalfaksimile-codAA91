@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Berner Parzival-Handschrift (Cod. AA 91) - Digitalfaksimile</title>
+<script language="javascript">
+	//document.onkeydown = top.navigation.TasteGedrueckt;
+	function TasteGedrueckt(Ereignis) {
+	var zoom = parent.navigation.zoom;
+	if (navigator.appName == "Netscape") {
+		if (parseInt(zoom) != 150) {
+			if (Ereignis.which == 37) {
+				parent.navigation.goPrevPage();
+			}
+			if (Ereignis.which == 39) {
+				parent.navigation.goNextPage();
+			}
+		 	return true;
+		}
+	}
+	if (navigator.appName == "Microsoft Internet Explorer") {
+			//zoom *= 1;
+			//alert (typeof zoom);
+		if (parseInt(zoom) != 150) {
+			if (window.event.keyCode == 37) {
+				parent.navigation.goPrevPage();
+				return true;
+			} 
+			if (window.event.keyCode == 39) {
+				parent.navigation.goNextPage();
+				return true;
+			}
+		}
+	}
+}
+
+document.onkeydown = TasteGedrueckt;
+
+</script>
+</head>
+
+<body bgcolor="#F0F0F0">
+<img src="#" id="bild" alt="Digitalfaksimile" name="imgFaksimile"/>
+</body>
+</html>
